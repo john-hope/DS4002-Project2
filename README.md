@@ -36,7 +36,7 @@ This project makes use of the following R packages:
 | AllDevices | Numeric | The number of page devices for the month and year across all devices | 2571858 |
 | Desktop | Numeric | The number of page devices for the month and year across desktop devices | 6565 |
 | Mobile | Numeric | The number of page devices for the month and year across mobile devices | 233 |
-| Category | String | The category/industry that the website falls into. One of: 'E-commerce', News, 'Sports' | 'E-commerce'
+| Category | String | The category/industry that the website falls into. One of: 'E-commerce', 'News', 'Sports' | 'E-commerce'
 
 ## Figures
 
