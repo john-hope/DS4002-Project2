@@ -29,6 +29,8 @@ This project makes use of the following Python modules:
 
 ### Usage of Code in this Repository
 
+There is one code file in this repository: TimeSeriesModeling.py. This file contains the code for visualization of the time series data, as well as the creation and evaluation of the machine learning forecasting model. The data is read in and then filtered to include only our Amazon data. The data us then initially visualized to detect the trends we are interested in. Then we pre-process the data for modeling, by detecing outliers, testing for stationarity and seasonality. Aftet this, we split the data into testing and training. Following this, we fit and train the model. We then create the forecast and evaluate it on the test data. Lastly, we find the relevant metrics for this analysis.
+
 ## Data
 
 The dataset to be used for this project contains page visit data for different websites over
