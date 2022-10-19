@@ -22,9 +22,7 @@ This project makes use of the following Python modules:
 - pandas
 - matplotlib.pyploy
 - datetime
-- sklearn
--- preprocessing
--- svm
+- sklearn (preprocessing & svm)
 - statsmodels.tsa.api
 - statsmodel.api
 - pmdarima
@@ -36,6 +34,13 @@ This project makes use of the following R packages:
 ### Usage of Code in this Repository
 
 ## Data
+
+The dataset to be used for this project contains page visit data for different websites over
+time. The data was collected from Semrush, a website that provides website traffic information
+for different domains. Data for our different websites of interest were downloaded on Semrush,
+and then all compiled in Excel. The dataset contains page visits for each month from January
+2017 to October 2022 for our 8 separate websites, so there are 560 total records. After we decided
+Amazon would be our only website of interest, we filtered it down for just Amazon, which left us with 70 observations
 
 ### Data Dictionary
 
