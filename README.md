@@ -2,7 +2,7 @@
 
 ## Repository Contents
 
-This repository contains code, data and figures for a data science project investigating internet traffic across different website categories including e-commerce, news and sports websites. This project was created as part of the Data Science Project Course (DS 4002) at the University of Virginia in the Fall of 2022.
+This repository contains code, data and figures for a data science project investigating and forecasting internet traffic on Amazon, one of the most visited websites in the world. This project was created as part of the Data Science Project Course (DS 4002) at the University of Virginia in the Fall of 2022.
 
 ## Source Code
 
