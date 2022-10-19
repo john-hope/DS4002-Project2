@@ -27,10 +27,6 @@ This project makes use of the following Python modules:
 - statsmodel.api
 - pmdarima
 
-#### R Packages
-
-This project makes use of the following R packages:
-
 ### Usage of Code in this Repository
 
 ## Data
