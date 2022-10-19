@@ -1,4 +1,4 @@
-# Predicting Internet Traffic Across Websites Categories
+# Predicting Internet Traffic on Amazon
 
 ## Repository Contents
 
