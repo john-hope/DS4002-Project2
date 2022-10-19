@@ -29,7 +29,7 @@ This project makes use of the following Python modules:
 
 ### Usage of Code in this Repository
 
-There is one code file in this repository: `TimeSeriesModeling.py` ([src](src/TimeSeriesModeling.py)). This file contains the code for visualization of the time series data, as well as the creation and evaluation of the machine learning forecasting model. The data is read in and then filtered to include only our Amazon data. The data us then initially visualized to detect the trends we are interested in. Then we pre-process the data for modeling, by detecing outliers, testing for stationarity and seasonality. Aftet this, we split the data into testing and training. Following this, we fit and train the model. We then create the forecast and evaluate it on the test data. Lastly, we find the relevant metrics for this analysis.
+There is one code file in this repository: TimeSeriesModeling.py. This file contains the code for visualization of the time series data, as well as the creation and evaluation of the machine learning forecasting model. The data is read in and then filtered to include only our Amazon data. The data us then initially visualized to detect the trends we are interested in. Then we pre-process the data for modeling, by detecing outliers, testing for stationarity and seasonality. This section of the code was based on a time series analysis blog post found on the "Towards Data Science" site [3]. After this, we split the data into testing and training. Following this, we fit and train the model. We then create the forecast and evaluate it on the test data. Lastly, we find the relevant metrics for this analysis. The model creation and evaluations was based on the code found a blog post on "Medium" site [4].
 
 ## Data
 
@@ -64,5 +64,9 @@ Figures for this project can be found in the `figures` directory of this reposit
 [1] R. Jogi, “How to Handle Heavy Internet Traffic on Your Website?,” Cloud Minister Technologies. Sept. 28, 2021. [Online]. Available: https://cloudminister.com. [Accessed Oct. 5, 2022].
 
 [2] A. Coghlan, “Using R for Time Series Analysis,” Little Book of R for Time Series. 2010. [Online]. Available: https://a-little-book-of-r-for-time-series.readthedocs.io. [Accessed Oct. 12, 2022].
+
+[3] M. Pietro, “Time Series Analysis for Machine Learning,” Towards Data Science. 2020. [Online]. Available: https://towardsdatascience.com/time-series-analysis-for-machine-learning-with-python-626bee0d0205 [Accessed Oct. 17, 2022].
+
+[4] M. Pietro, “Time Series Forecasting: ARIMA vs LSTM vs PROPHET,” Medium. 2020. [Online]. Available: https://medium.com/analytics-vidhya/time-series-forecasting-arima-vs-lstm-vs-prophet-62241c203a3b [Accessed Oct. 17, 2022].
 
 Files documenting the previous 2 milestones of this project can be found in the `milestones` directory of this repository in `M1Hypothesis.pdf` ([src](milestones/MI1Hypothesis.pdf)) and `MI2EstablishDataAndAnalysisPlan.pdf` ([src](milestones/MI2EstablishDataAndAnalysisPlan.pdf)).
