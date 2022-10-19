@@ -10,33 +10,28 @@ Source code for this project can be found in the `src` directory of this reposit
 
 ### Installing/Building Code in this Repository
 
-After cloning or forking this repository, its contents can be used to recreate different parts of this project. The required modules and packages used in Python and R for this project are listed below.
+After cloning or forking this repository, its contents can be used to recreate different parts of this project. The required modules used in Python this project are listed below.
 
-### Modules and Packages Used in this Project
+### Modules Used in this Project
 
 #### Python Modules
 
 This project makes use of the following Python modules:
-
-- numpy
-- pandas
-- matplotlib.pyploy
-- datetime
-- sklearn (preprocessing & svm)
-- statsmodels.tsa.api
-- statsmodel.api
-- pmdarima
+- `datetime` - to convert date values to datetime objects
+- `matplotlib.pyplot` - to create plots
+- `numpy` - for numerical data manipulation
+- `os` - for setting the working directory
+- `pandas` - for data manipulation
+- `pmdarima` - to create ARIMA model
+- `sklearn` - for preprocessing and support vector classifier
+- `statsmodels.tsa.api` - to train the model
+- `statsmodels.api` - to test stationarity
 
 ### Usage of Code in this Repository
 
 ## Data
 
-The dataset to be used for this project contains page visit data for different websites over
-time. The data was collected from Semrush, a website that provides website traffic information
-for different domains. Data for our different websites of interest were downloaded on Semrush,
-and then all compiled in Excel. The dataset contains page visits for each month from January
-2017 to October 2022 for our 8 separate websites, so there are 560 total records. After we decided
-Amazon would be our only website of interest, we filtered it down for just Amazon, which left us with 70 observations
+The dataset to be used for this project contains page visit data for different websites over time. The data was collected from Semrush, a website that provides website traffic information for different domains. Data for our different websites of interest were downloaded on Semrush, and then all compiled in Excel. The dataset contains page visits for each month from January 2017 to October 2022 for our 8 separate websites, so there are 560 total records. After we decided Amazon would be our only website of interest, we filtered it down for just Amazon, which left us with 70 observations. The full data file can be found in CSV format in the `data` directory of this repository in `siteVisitsByMonth.csv` ([src](data/siteVisitsByMonth.csv)).
 
 ### Data Dictionary
 
