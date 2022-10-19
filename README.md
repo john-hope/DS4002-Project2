@@ -46,6 +46,9 @@ Figures for this project can be found in the `figures` directory of this reposit
 
 | Figure Name | Variables | Summary |
 |-------------|-----------|---------|
+| Amazon Page Visits Over Time | x = date, y = page visits (in billions) | The line graph shows the trend and moving average of page visits on Amazon since 2017. The overall trend we see is that page visits are increasing. There also appears to roughly be patterns of seasonality, with higher page visits towards the ends and beginnings of the year, with lower numbers in the middle of the year |
+| Outlier Detection | x = date, y = page visits | This plot shows the same line graph as the prior graph, but points out the outliers that were calculated in the time series. From this, we know May 2017, September 2017, August 2022, and October 2022 are all outliers to be removed for further analysis |
+| SARIMA (1,1,1) x (1,1,1,12) | x and y are different variables relevant to each plot | The series of plot found in this figure summarize the time series forecasting model and its evaluated metrics. From the "Forecast" model, we see our predictions are working relatively well, following the general pattern from the observed data. From the "Residuals" plot, we see that the residuals appear to be stationary with no changing patterns, which is a good sign. From the "Residual Distribution" plot, we see the residuals are roughly normally distributed, which is appropriate. |
 
 ## References
 
