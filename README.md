@@ -18,6 +18,17 @@ After cloning or forking this repository, its contents can be used to recreate d
 
 This project makes use of the following Python modules:
 
+numpy
+pandas
+matplotlib.pyploy
+datetime
+sklearn
+- preprocessing
+- svm
+statsmodels.tsa.api
+statsmodel.api
+pmdarima
+
 #### R Packages
 
 This project makes use of the following R packages:
