@@ -6,8 +6,6 @@ This repository contains code, data and figures for a data science project inves
 
 ## Source Code
 
-Source code for this project can be found in the `src` directory of this repository.
-
 ### Installing/Building Code in this Repository
 
 After cloning or forking this repository, its contents can be used to recreate different parts of this project. The required modules used in Python this project are listed below.
@@ -29,7 +27,7 @@ This project makes use of the following Python modules:
 
 ### Usage of Code in this Repository
 
-There is one code file in this repository: `TimeSeriesModeling.py` ([src](src/TimeSeriesModeling.py)). This file contains the code for visualization of the time series data, as well as the creation and evaluation of the machine learning forecasting model. The data is read in and then filtered to include only our Amazon data. The data us then initially visualized to detect the trends we are interested in. Then we pre-process the data for modeling, by detecing outliers, testing for stationarity and seasonality. Aftet this, we split the data into testing and training. Following this, we fit and train the model. We then create the forecast and evaluate it on the test data. Lastly, we find the relevant metrics for this analysis.
+There is one code file in this repository which can be found in the `src` directory of this repository: `TimeSeriesModeling.py` ([src](src/TimeSeriesModeling.py)). This file contains the code for visualization of the time series data, as well as the creation and evaluation of the machine learning forecasting model. The data is read in and then filtered to include only our Amazon data. The data us then initially visualized to detect the trends we are interested in. Then we pre-process the data for modeling, by detecing outliers, testing for stationarity and seasonality. Aftet this, we split the data into testing and training. Following this, we fit and train the model. We then create the forecast and evaluate it on the test data. Lastly, we find the relevant metrics for this analysis.
 
 ## Data
 
