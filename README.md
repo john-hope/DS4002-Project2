@@ -53,8 +53,8 @@ Figures for this project can be found in the `figures` directory of this reposit
 
 | Figure Name | Variables | Summary |
 |-------------|-----------|---------|
-| Amazon Page Visits Over Time | x = date, y = page visits (in billions) | The line graph shows the trend and moving average of page visits on Amazon since 2017. The overall trend we see is that page visits are increasing. There also appears to roughly be patterns of seasonality, with higher page visits towards the ends and beginnings of the year, with lower numbers in the middle of the year |
-| Outlier Detection | x = date, y = page visits | This plot shows the same line graph as the prior graph, but points out the outliers that were calculated in the time series. From this, we know May 2017, September 2017, August 2022, and October 2022 are all outliers to be removed for further analysis |
+| Amazon Page Visits Over Time | x = date, y = page visits (in billions) | The line graph shows the trend and moving average of page visits on Amazon since 2017. The overall trend we see is that page visits are increasing. There also appears to roughly be patterns of seasonality, with higher page visits towards the ends and beginnings of the year, with lower numbers in the middle of the year. |
+| Outlier Detection | x = date, y = page visits | This plot shows the same line graph as the prior graph, but points out the outliers that were calculated in the time series. From this, we know May 2017, September 2017, August 2022, and October 2022 are all outliers to be removed for further analysis. |
 | SARIMA (1,1,1) x (1,1,1,12) | x and y are different variables relevant to each plot | The series of plot found in this figure summarize the time series forecasting model and its evaluated metrics. From the "Forecast" model, we see our predictions are working relatively well, following the general pattern from the observed data. From the "Residuals" plot, we see that the residuals appear to be stationary with no changing patterns, which is a good sign. From the "Residual Distribution" plot, we see the residuals are roughly normally distributed, which is appropriate. |
 
 ## References
@@ -63,8 +63,8 @@ Figures for this project can be found in the `figures` directory of this reposit
 
 [2] A. Coghlan, “Using R for Time Series Analysis,” Little Book of R for Time Series. 2010. [Online]. Available: https://a-little-book-of-r-for-time-series.readthedocs.io. [Accessed Oct. 12, 2022].
 
-[3] M. Pietro, “Time Series Analysis for Machine Learning,” Towards Data Science. 2020. [Online]. Available: https://towardsdatascience.com/time-series-analysis-for-machine-learning-with-python-626bee0d0205. [Accessed Oct. 17, 2022].
+[3] M. Pietro, “Time Series Analysis for Machine Learning,” Towards Data Science. 2020. [Online]. Available: https://towardsdatascience.com. [Accessed Oct. 17, 2022].
 
-[4] M. Pietro, “Time Series Forecasting: ARIMA vs LSTM vs PROPHET,” Medium. 2020. [Online]. Available: https://medium.com/analytics-vidhya/time-series-forecasting-arima-vs-lstm-vs-prophet-62241c203a3b. [Accessed Oct. 17, 2022].
+[4] M. Pietro, “Time Series Forecasting: ARIMA vs LSTM vs PROPHET,” Medium. 2020. [Online]. Available: https://medium.com. [Accessed Oct. 17, 2022].
 
 Files documenting the previous 2 milestones of this project can be found in the `milestones` directory of this repository in `M1Hypothesis.pdf` ([src](milestones/MI1Hypothesis.pdf)) and `MI2EstablishDataAndAnalysisPlan.pdf` ([src](milestones/MI2EstablishDataAndAnalysisPlan.pdf)).
