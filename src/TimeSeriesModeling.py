@@ -26,8 +26,8 @@ data = pd.read_csv('Site Visits by Month.csv')
 data['MonthYear']=pd.to_datetime(data['MonthYear'], format = '%Y.%m.%d').dt.date
 
 # Subsetting to Amazon data
-amazon_ts = data[data['Site']=='Amazon'][['MonthYear', 'All Devices']]
-amazon_ts = amazon_ts['All Devices'].groupby(amazon_ts['MonthYear']).sum()
+amazon_df = data[data['Site']=='Amazon']
+amazon_ts = amazon_df['All Devices'].groupby(amazon_df['MonthYear']).sum()
 
 # Copy to use later
 amazon = amazon_ts
@@ -48,6 +48,9 @@ plt.ylabel("Page Visits (in billions)")
 plt.title('Amazon Page Visits Over Time')
 plt.grid(True)
 plt.show()
+
+# Finding highest month each year
+amazon_df[['All Devices','MonthYear']].groupby(amazon_df['Year']).max()
 
 # Function to find and plot outliers
 def find_outliers(ts, perc=0.01, figsize=(20,13)):
@@ -163,7 +166,7 @@ dtf["pred_int_low"] = dtf["forecast"] - 1.96*error_std
 dtf["pred_int_up"] = dtf["forecast"] + 1.96*error_std
 
 
-plt.rcParams.update({'font.size': 12})
+plt.rcParams.update({'font.size': 15})
 
 # Creating plots and evaluations
 fig = plt.figure(figsize=(20,13))
@@ -175,7 +178,7 @@ ax4 = fig.add_subplot(2,2, 4)
 
 # Training Model plot
 dtf[pd.notnull(dtf["model"])][["ts","model"]].plot(color=["black","darkorange"], title="Model", grid=True, ax=ax1)      
-ax1.set(xlabel=None, ylabel = 'Page Visits (in Billions)')
+ax1.set(xlabel=None, ylabel = 'Page Visits (in Billions)', xticks = ['2017','2018','2019','2020','2021'])
 ax1.legend(['Observed', 'Fitted Model'])
 
 # Test Forecast plot
@@ -234,7 +237,7 @@ total["conf_int_up"] = total["pred"] + 1.96*residuals_std2
 # For graphing purposes
 total.iloc[69]['pred'] = total.iloc[69]['observed']
 
-plt.rcParams.update({'font.size': 22})
+plt.rcParams.update({'font.size': 25})
 
 # Create forecast plot
 fig = plt.figure(figsize=(20,13))
@@ -244,4 +247,4 @@ ax1.fill_between(x=total.index, y1=(total['conf_int_low']/1000000000),
                  y2=(total['conf_int_up']/1000000000), color='slateblue', alpha=0.3)
 ax1.set(xlabel=None, ylabel = 'Page Visits (in billions)', title = 'Future Forecast')
 ax1.legend(['Observed', 'Forecast'], loc='upper left')
-plt.show()     
+plt.show()
